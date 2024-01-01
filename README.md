@@ -33,6 +33,18 @@ npm i
 npm run dev
 ```
 
+以下のようなコンソールが表示されます。表示されているリンク（http://localhost:5173）を開けばマインスイーパーが遊べます。
+
+環境によっては異なるポート番号が表示される場合もありますが、問題ありません。
+
+```bash
+  VITE v5.0.10  ready in 490 ms
+
+  ➜  Local:   http://localhost:5173/
+  ➜  Network: use --host to expose
+  ➜  press h + enter to show help
+```
+
 ## ゲームのルール
 
 - マスを**左クリック**すると開きます。
