@@ -1,0 +1,141 @@
+.band {
+    text-align: center;
+    background-color: lightblue;
+    font-size: large;
+    font-weight: bold;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #333;
+    color: #f1f1f1;
+}
+
+.container {
+    background-color: #d1d1d1;
+    display: flex;
+    flex-direction: column;
+    min-height: 80vh;
+    align-items: center;
+}
+
+.loader {
+    text-align: center;
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+.levelWrapper {
+    text-align: center;
+    padding-top: 0.5rem;
+    padding-bottom: 0.2rem;
+    user-select: none;
+}
+
+.level {
+    display: inline-block;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    /* width: 5rem; */
+    height: 2rem;
+    font-weight: 700;
+    font-size: large;
+    cursor: pointer;
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+.infoWrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-right: solid 5px #e0e0e0;
+    border-bottom: solid 5px #e0e0e0;
+    border-left: solid 4px #aaa;
+    border-top: solid 4px #aaa;
+    height: 60px;
+    margin-bottom: 5px;
+}
+
+.boardWrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #d1d1d1;
+    border-left: solid 4px #e0e0e0;
+    border-top: solid 4px #e0e0e0;
+    border-right: solid 5px #aaa;
+    border-bottom: solid 5px #aaa;
+    padding: 5px;
+}
+
+.board {
+    border-right: solid 5px #e0e0e0;
+    border-bottom: solid 5px #e0e0e0;
+    border-left: solid 5px #aaa;
+    border-top: solid 5px #aaa;
+
+    display: grid;
+    /* grid-template-columns: repeat(8, 25px); */
+    row-gap: 0%;
+    column-gap: 0%;
+}
+
+.tile {
+    margin: 0;
+    padding: 0;
+    user-select: none;
+}
+
+.easyCols {
+    grid-template-columns: repeat(8, 25px);
+}
+
+.easyInfoWidth {
+    width: 210px;
+}
+
+.mediumCols {
+    grid-template-columns: repeat(16, 25px);
+}
+
+.mediumInfoWidth {
+    width: 410px;
+}
+
+.hardCols {
+    grid-template-columns: repeat(30, 25px);
+}
+
+.hardInfoWidth {
+    width: 760px;
+}
+
+.extremeCols {
+    grid-template-columns: repeat(48, 25px);
+}
+
+.extremeInfoWidth {
+    width: 1210px;
+}
+
+.message {
+    margin-top: 1rem;
+    margin-bottom: 0.3rem;
+    /* padding-bottom: 1rem; */
+    font-size: large;
+    font-weight: bold;
+    text-align: center;
+    user-select: none;
+}
+
+
+.rule {
+    /* padding-top: 0.5rem; */
+    display: block;
+    text-align: center;
+    margin-bottom: 1rem;
+}
