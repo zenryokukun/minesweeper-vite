@@ -108,7 +108,7 @@ function MinesSection({ game, handler, boardStyle, dispatch }: MinesProp) {
 
   return (
     <div className={boardStyle}>
-      {game.tiles.map((arr, i) => {
+      {game.tiles.map((_, i) => {
         const spIndex = getGroundSpriteIndex(game, i);
         const url = handler.layer.getUrl(spIndex);
         return (

@@ -111,14 +111,6 @@ export default function Page() {
   // 難易度に応じたstyleを取得
   const [infoStyle, boardStyle] = getStyles(game.level);
 
-  // headerタグのmeta data
-  const headParam = {
-    title: "マインスイーパー改",
-    cardTitle: "全力RETRO GAME",
-    description: "未到達のレベルを引っ提げて、やつは再び現れる...その名は『地雷を撤去せし者・改』。",
-    imagePath: "https://www.zenryoku-kun.com/production/minesweeper/ms-card-img.png",
-  };
-
   return (
     <>
       <div className={style.band}>Minesweeper極(KI-WA-MI)</div>

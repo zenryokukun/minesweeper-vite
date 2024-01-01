@@ -126,7 +126,7 @@ function newHandler(img: HTMLImageElement, spPos: number[][], spSize: number[]) 
  * @returns Spritesに解決するPromise
  */
 export function loadSprite(imgPath: string): Promise<Sprites> {
-  const prom = new Promise((res: (spHandler: Sprites) => void, rej) => {
+  const prom = new Promise((res: (spHandler: Sprites) => void, _) => {
     const img = new Image();
     img.addEventListener("load", () => {
       // ゲーム版、ニコニコ、数字ごとにspriteHandlerを取得
