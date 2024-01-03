@@ -11,12 +11,16 @@ import react from '@vitejs/plugin-react-swc'
 
 export default defineConfig(({ command, mode, isSsrBuild, isPreview }) => {
 
-  // ビルド時のみに適用するオプション。GitHub-Page用
+  // ビルド、プレビュー時に適用するオプション。GitHub-Page用
+  // command==="serve|command"で制御しようとすると、preview時に何故かbaseが設定されないため、
+  // mode==="production"で制御するように変更。
+  //  build,preview -> "production"
+  //  dev -> "development"
   // 開発サーバのBASE_URLは"/"、GitHub-pagesでは”minesweeper-vite”となるため、条件分岐が必要。
   // ビルド資産のhtmlファイルのパスを確認すれば、ビルド版のパス設定が確認できる。
   const buildOption = {};
 
-  if (command === "build") {
+  if (mode === "production") {
     buildOption["base"] = "/minesweeper-vite/";
   }
 
