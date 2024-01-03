@@ -17,7 +17,7 @@ export default defineConfig(({ command, mode, isSsrBuild, isPreview }) => {
   const buildOption = {};
 
   if (command === "build") {
-    buildOption["base"] = "/minesweeper-vite";
+    buildOption["base"] = "/minesweeper-vite/";
   }
 
   return {
