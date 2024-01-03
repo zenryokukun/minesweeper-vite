@@ -2,6 +2,8 @@
 
 ローカルで動く、ブラウザ版マインスイーパーです。
 
+仕上がりはこちらの[GitHub Page](https://zenryokukun.github.io/minesweeper-vite/)で確認できます。
+
 もともとは[game-ms](https://github.com/zenryokukun/game-ms)で公開していましたが、```create-react-app```がReactのドキュメントから消えたので、vite版を作成しました。
 
 Websiteで公開しているReact流[マインスイーパー改](https://www.zenryoku-kun.com/production/minesweeperkai)のゲーム部分を
