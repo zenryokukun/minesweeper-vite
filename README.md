@@ -1,9 +1,11 @@
 # vite版:Minesweeper極(KI-WA-MI)
 
-Websiteで公開しているReact流[マインスイーパー改](https://www.zenryoku-kun.com/production/minesweeperkai)のゲーム部分を
-ローカルで実行できるようにしたもの。webページにあるナビゲーションバーやフッターの機能は落としています。
+ローカルで動く、ブラウザ版マインスイーパーです。
 
 もともとは[game-ms](https://github.com/zenryokukun/game-ms)で公開していましたが、```create-react-app```がReactのドキュメントから消えたので、vite版を作成しました。
+
+Websiteで公開しているReact流[マインスイーパー改](https://www.zenryoku-kun.com/production/minesweeperkai)のゲーム部分を
+ローカルで実行できるようにしたものです。よければWebsiteにも訪問してください。
 
 ## インストール方法
 
