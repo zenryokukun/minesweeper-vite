@@ -9,6 +9,10 @@ interface DescProp {
 }
 /**description */
 export default function Description({ closeModal }: DescProp) {
+
+  // GitHub-pagesと開発サーバでBASE_URLが異なるため、追加
+  const descriptionImagePath = import.meta.env.BASE_URL + "double-click.png";
+
   return (
     <div className={style.modal}>
       <div onClick={closeModal} className={style.close}>X CLOSE</div>
@@ -60,7 +64,7 @@ export default function Description({ closeModal }: DescProp) {
               時短に利用してください。
             </li>
             <div className={style.imgWrapper}>
-              <img className={style.descImg} src="/double-click.png" alt="double-click-explanation" />
+              <img className={style.descImg} src={descriptionImagePath} alt="double-click-explanation" />
             </div>
             <li>ニコニコボタンを押すと、同じレベルで再プレイできます</li>
             <li>上部のEASY MEDIUM HARDを押すと、レベル変更できます</li>
