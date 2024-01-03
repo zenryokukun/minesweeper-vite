@@ -86,7 +86,10 @@ export default function Page() {
 
   // spriteのロード処理。初回マウント時のみ実行。
   useEffect(() => {
-    const sp = loadSprite("/minesweeper.png");
+    // GitHub-pagesと開発サーバでBASE_URLが異なるため、追加
+    const spritePath = import.meta.env.BASE_URL + "minesweeper.png"
+
+    const sp = loadSprite(spritePath);
     sp.then(handler => setHandler(handler));
   }, []);
 
